@@ -1,0 +1,102 @@
+.navbar__container {
+  top: 0;
+  left: 0;
+  // @fix: edit backgound color
+  // background-color: var(--s-color-tertiary);
+  // border-bottom: 1px solid var(--s-color-quaternary);
+}
+
+.navbar__link--home {
+  color: var(--s-color-primary);
+  display: flex;
+  font-size: 48px;
+  font-weight: 900;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  padding-block: 16px;
+  gap: 32px;
+  width: fit-content;
+}
+
+// admin navbar
+.admin__navbar {
+  border-right: 1px solid var(--s-color-quaternary);
+  border-bottom: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.navbar__link--admin {
+  color: var(--s-color-primary);
+  display: flex;
+  font-size: 48px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 2rem;
+  width: 15rem;
+}
+
+.navbar--admin {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: space-around;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  text-align: left;
+  width: 15rem;
+}
+
+.navbar__item--admin {
+  align-items: center;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  line-height: normal;
+  list-style: none;
+  margin-right: 1.2rem;
+}
+
+.item__text {
+  width: 8rem
+}
+
+.nav__btn {
+  @include button;
+  background-color: var(--s-color-primary);
+  border-radius: 6px;
+  color: var(--s-color-tertiary);
+  padding: 2px;
+
+    &:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+  }
+}
+// admin navbar
+
+.navbar__link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--s-color-secondary);
+  // color: var(--s-color-tertiary);
+  white-space: nowrap;
+}
+
+.navbar__link:hover {
+  font-weight: 600;
+  transition: .2s;
+}
+
+a.active {
+  color: var(--s-color-primary);
+  color: var(--s-color-primary);
+  font-weight: 900;
+  text-decoration: none;
+}

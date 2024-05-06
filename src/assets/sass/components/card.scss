@@ -1,0 +1,56 @@
+.card__container {
+  // border: 1px solid var(--s-color-secondary);
+  border: 1px solid var(--s-color-quaternary);
+  border-radius: 12px;
+  color: var(--s-color-tertiary);
+  height: 480px;
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+}
+
+// @fix: make this animation on hover
+.card__container:hover {
+  // box-shadow: 0 0 3px rgba(0,0,0,.25);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.25);
+  transition: box-shadow 250ms cubic-bezier(.4,0,.2,1);
+}
+
+.card__image {
+  border-radius: 12px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card__subtitle {
+  margin-top: 1.5em;
+  position: relative;
+  bottom: 10px;
+  line-height: 1em;
+}
+
+.card__information {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 8px;
+  margin-top: 24px;
+}
+
+.card__price {
+  font-weight: 800;
+  position: absolute;
+  bottom: 64px;
+}
+
+.card__button {
+  @include button;
+
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}

@@ -1,0 +1,39 @@
+@import './main.scss';
+
+:root {
+  // @fix: add font family
+  font-weight: 400;
+  line-height: 1.5;
+
+  // variables
+  --s-color-primary: #45B2EC;
+  --s-color-secondary: #fff;
+  --s-color-tertiary: #121212;
+  --s-color-quaternary: #888;
+
+  // --s-color-primary: #45B2EC;
+  // --s-color-secondary: #333;
+  // --s-color-tertiary: #E6E6E6;
+  // --s-color-quaternary: #888;
+
+  // @fix: make different colors for admin and users
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--s-color-tertiary);
+  // background-color: var(--s-color-secondary);
+  color: var(--s-color-secondary);
+  // color: var(--s-color-tertiary);
+}
